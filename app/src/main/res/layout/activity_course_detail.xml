@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Details"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="Day of the Week:"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/etDayOfWeek"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="2"
+            android:background="@drawable/edittext_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time:"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TimePicker
+            android:id="@+id/etTime"
+            android:layout_width="0dp"
+            android:layout_height="101dp"
+            android:layout_weight="2"
+            android:timePickerMode="spinner" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Capacity"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Duration (NumberPicker for hours and minutes) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Duration (min)"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Price -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Class Type -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Class Type:"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/etClassType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/edittext_background" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_marginBottom="24dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Course"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

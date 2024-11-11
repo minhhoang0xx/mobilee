@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">hoanglmgch210529</string>
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="class_types">
+        <item>Flow Yoga</item>
+        <item>Aerial Yoga</item>
+        <item>Family Yoga</item>
+    </string-array>
+</resources>

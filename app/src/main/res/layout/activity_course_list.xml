@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by teacher name, date, or weekday"
+        android:padding="12dp"
+        android:background="@drawable/rounded_input"
+        android:layout_marginBottom="16dp" />
+    <Button
+        android:id="@+id/btnAddCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Course" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCourses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
